@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_caption_add_pkmon"
+        android:layout_width="363dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:background="#9C27B0"
+        android:text="LISÄÄ PKMON"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_choose_clan_add_pkmon"
+        android:layout_width="351dp"
+        android:layout_height="392dp"
+        android:backgroundTint="#F44336"
+        android:backgroundTintMode="screen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_caption_add_pkmon">
+
+        <TextView
+            android:id="@+id/text_choose_clan_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALITSE KLAANI"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/clan_choise_green_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vihreä" />
+
+        <RadioButton
+            android:id="@+id/clan_choise_yellow_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keltainen" />
+
+        <RadioButton
+            android:id="@+id/clan_choise_red_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="punainen" />
+
+        <RadioButton
+            android:id="@+id/clan_choise_blue_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sininen" />
+
+        <RadioButton
+            android:id="@+id/clan_choise_orange_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="oranssi" />
+
+        <TextView
+            android:id="@+id/caption_add_pkmon_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANNA NIMI"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_input_add_pkmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
