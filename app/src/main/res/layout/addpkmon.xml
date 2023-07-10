@@ -85,7 +85,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:hint="hint" />
+                android:hint="syötä nimi tähän" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
