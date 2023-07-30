@@ -21,22 +21,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SwitchToAdd(View view){
-        Intent intent = new Intent(this, AddPokemons.class);
+        Intent intent = new Intent(this, AddPokemon.class);
         startActivity(intent);
     }
 
     public void SwitchToList(View view){
-        Intent intent = new Intent(this, AddPokemons.class);
+        Intent intent = new Intent(this, PokemonList.class);
         startActivity(intent);
     }
 
     public void SwitchToMove(View view){
-        Intent intent = new Intent(this, AddPokemons.class);
+        Intent intent = new Intent(this, Transfer.class);
         startActivity(intent);
     }
 
     public void SwitchToFight(View view){
-        Intent intent = new Intent(this, AddPokemons.class);
+        Intent intent = new Intent(this, Fight.class);
         startActivity(intent);
     }
 }

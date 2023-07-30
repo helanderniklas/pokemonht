@@ -5,20 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_caption_add_pkmon"
-        android:layout_width="363dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:background="#9C27B0"
-        android:text="LISÄÄ PKMON"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/layout_choose_clan_add_pkmon"
         android:layout_width="351dp"
@@ -29,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_caption_add_pkmon">
+        app:layout_constraintTop_toBottomOf="@+id/confrimAddPkmon">
 
         <TextView
             android:id="@+id/text_choose_clan_add_pkmon"
@@ -39,35 +25,41 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/clan_choise_green_add_pkmon"
+        <RadioGroup
+            android:id="@+id/pkmonType"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="vihreä" />
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/clan_choise_yellow_add_pkmon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="keltainen" />
+            <RadioButton
+                android:id="@+id/clan_choise_orange_add_pkmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="oranssi" />
 
-        <RadioButton
-            android:id="@+id/clan_choise_red_add_pkmon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="punainen" />
+            <RadioButton
+                android:id="@+id/clan_choise_yellow_add_pkmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="keltainen" />
 
-        <RadioButton
-            android:id="@+id/clan_choise_blue_add_pkmon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="sininen" />
+            <RadioButton
+                android:id="@+id/clan_choise_blue_add_pkmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sininen" />
 
-        <RadioButton
-            android:id="@+id/clan_choise_orange_add_pkmon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="oranssi" />
+            <RadioButton
+                android:id="@+id/clan_choise_green_add_pkmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vihreä" />
+
+            <RadioButton
+                android:id="@+id/clan_choise_red_add_pkmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="punainen" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/caption_add_pkmon_add_name"
@@ -83,10 +75,23 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pkmonName"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:hint="syötä nimi tähän" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/confrimAddPkmon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="129dp"
+        android:text="LISÄÄ POKMON"
+        app:layout_constraintBottom_toTopOf="@+id/layout_choose_clan_add_pkmon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
