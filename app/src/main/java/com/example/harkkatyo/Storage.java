@@ -30,6 +30,28 @@ public class Storage {
         return pokemons;
     }
 
+    public static ArrayList<Pokemon> getPokemonFight(){
+        ArrayList<Pokemon> inFightState = new ArrayList<>();
+        for (Pokemon pokemon : pokemons){
+            if(pokemon.getState() == 2){
+                inFightState.add(pokemon);
+            }
+        }
+
+        return inFightState;
+    }
+
+    public static ArrayList<Pokemon> getPokemonTrain(){
+        ArrayList<Pokemon> inTrainState = new ArrayList<>();
+        for (Pokemon pokemon : pokemons){
+            if(pokemon.getState() == 1){
+                inTrainState.add(pokemon);
+            }
+        }
+
+        return inTrainState;
+    }
+
     public static void listPokemons(){
         for (Pokemon pokemon : pokemons){
 

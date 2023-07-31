@@ -45,13 +45,13 @@ public class FightListAdapter extends RecyclerView.Adapter<FightViewHolder> {
     }
 
 
-    public ArrayList<String> getSelectedPokemonUUIDs() {
-        ArrayList<String> selectedUUIDs = new ArrayList<>();
+    public ArrayList<Pokemon> selectedToFight() {
+        ArrayList<Pokemon> selectedToFight = new ArrayList<>();
         for (Pokemon pokemon : pokemons) {
-            if (pokemon.isSelected()) {
-                selectedUUIDs.add(pokemon.getUUID());
+            if (pokemon.getState() == 2) {
+                selectedToFight.add(pokemon);
             }
         }
-        return selectedUUIDs;
+        return selectedToFight;
     }
 }

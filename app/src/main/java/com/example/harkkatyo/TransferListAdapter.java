@@ -32,6 +32,7 @@ public class TransferListAdapter extends RecyclerView.Adapter<TransferViewHolder
     @Override
     public void onBindViewHolder(@NonNull TransferViewHolder holder, int position) {
         holder.selectedPkmons.setText(filteredPokemons.get(position).getName() + " " + filteredPokemons.get(position).getType());
+        holder.selectedPkmons.setClickable(filteredPokemons.get(position).getState() != 3);
     }
 
     @Override

@@ -57,6 +57,17 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <Button
+        android:id="@+id/trainPkms"
+        android:layout_width="335dp"
+        android:layout_height="92dp"
+        android:onClick="switchToTrain"
+        android:text="TREENAA"
+        app:layout_constraintBottom_toTopOf="@+id/gotofight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movepkm" />
+
+    <Button
         android:id="@+id/gotofight"
         android:layout_width="335dp"
         android:layout_height="92dp"

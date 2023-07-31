@@ -19,6 +19,7 @@ public class TransferViewHolder extends RecyclerView.ViewHolder {
         this.adapter = adapter;
         selectedPkmons = itemView.findViewById(R.id.selectPokemon);
 
+
         selectedPkmons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

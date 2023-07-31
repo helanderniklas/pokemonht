@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/selectorRecyclerView">
 
         <RadioGroup
-            android:id="@+id/transferOptions"
+            android:id="@+id/trainOptions"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

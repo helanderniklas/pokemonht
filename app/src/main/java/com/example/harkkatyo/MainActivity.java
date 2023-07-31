@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void switchToTrain(View view){
+        Intent intent = new Intent(this, Train.class);
+        startActivity(intent);
+    }
+
     public void SwitchToFight(View view){
         Intent intent = new Intent(this, Fight.class);
         startActivity(intent);

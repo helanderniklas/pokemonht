@@ -34,8 +34,13 @@ public class Pokemon {
     public String getName(){ return name; }
     public String getType(){ return type; }
     public int getAttackPoints(){ return attackPoints; }
+
+    public void setAttackPoints(int attack){ this.attackPoints = attack;}
     public int getDefensePoints(){ return defensePoints; }
     public int getLifePoints(){ return lifePoints; }
+
+    public void setLifePoints(int life){ this.lifePoints = life;}
+
     public int getMaxLifePoints(){ return maxLifePoints; }
     public int getExperiencePoints(){ return experiencePoints; }
 
