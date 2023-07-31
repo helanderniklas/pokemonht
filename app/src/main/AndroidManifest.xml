@@ -17,14 +17,12 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".AddPokemon" />
         <activity android:name=".PokemonList" />
         <activity android:name=".Transfer" />
-        <activity android:name=".Train" />
         <activity
             android:name=".Fight"
             android:label="Fight Activity">
